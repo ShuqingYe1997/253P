@@ -1,0 +1,15 @@
+push Mundian To Bach Ke [Panjabi MC]
+push My Immortal [Evanescence]
+queue California Love [Tupac]
+next
+current
+addBefore Mundian To Bach Ke [Panjabi MC] Canta Per Me [Yuki Kajiura]
+addAfter Mundian To Bach Ke [Panjabi MC] Shape Of My Heart [Sting]
+current
+prev
+prev
+delete
+changeTo California Love [Tupac]
+current
+find Mundian To Bach Ke [Panjabi MC]
+print
