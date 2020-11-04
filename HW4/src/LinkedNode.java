@@ -10,7 +10,7 @@ public class LinkedNode {
     private LinkedNode next;
 
     LinkedNode() {
-        this.song = new Song();
+        this.song = null;
         this.next = null;
     }
 
@@ -38,5 +38,22 @@ public class LinkedNode {
 
     public void setSong(Song song) {
         this.song = song;
+    }
+
+    // for updating the node
+    // Java, 哼(
+    public void set(LinkedNode node) {
+        if(node == null) {
+            this.song = null;
+            this.next = null;
+        }
+        this.song = node.getSong();
+        this.next = node.getNext();
+    }
+
+    public void set(Song song,LinkedNode node) {
+
+        this.song = song;
+        this.next = node;
     }
 }

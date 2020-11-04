@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.Arrays;
 
 /**
  * @ClassName: MusicPlayer
@@ -37,50 +36,62 @@ public class MusicPlayer {
         switch (command) {
             case "push": {
                 playList.push(content);
+               // playList.print();
                 break;
             }
             case "queue": {
                 playList.queue(content);
+               // playList.print();
                 break;
             }
             case "current": {
                 playList.current();
+               // playList.print();
                 break;
             }
             case "delete": {
                 playList.delete();
+               // playList.print();
                 break;
             }
             case "prev": {
                 playList.prev();
+               // playList.print();
                 break;
             }
             case "next": {
                 playList.next();
+               // playList.print();
                 break;
             }
             case "restart": {
                 playList.restart();
+               // playList.print();
                 break;
             }
             case "find": {
                 playList.find(content);
+               // playList.print();
                 break;
             }
             case "changeTo": {
                 playList.changeTo(content);
+               // playList.print();
                 break;
             }
             case "addBefore": {
                 playList.addBefore(content);
+               // playList.print();
                 break;
             }
             case "addAfter": {
                 playList.addAfter(content);
+               // playList.print();
                 break;
             }
             case "random": {
                 playList.random();
+               // playList.print();
                 break;
             }
             case "print": {
@@ -96,13 +107,13 @@ public class MusicPlayer {
     public static void main(String[] args) {
         SimplePlayList playList = new SimplePlayList();
 //        Scanner scanner = new Scanner(System.in);
-        String input;
+        String line;
         try {
             FileReader fileReader = new FileReader(new File("sample_input.txt"));
             BufferedReader bufferedReader = new BufferedReader(fileReader);
-            while ((input = bufferedReader.readLine()) != null) {
-                String[] commands = parseInput(input);
-                System.out.println(Arrays.toString(commands));
+            while ((line = bufferedReader.readLine()) != null) {
+                String[] commands = parseInput(line);
+                System.out.println(line);
                 execute(commands, playList);
             }
 

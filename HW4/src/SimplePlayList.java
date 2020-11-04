@@ -162,28 +162,29 @@ public class SimplePlayList implements MusicPlayerImpl {
     is able to display it, its previous song, and its next song.
      */
     public boolean find(String s) {
-        String[] res = {};
         if (size == 0) {
             System.out.println("cannot find song!");
             return false;
         }
         Song target = parseOneString(s);
-        LinkedNode curLinkedNode = head, preLinkedNode = null;
-        if (search(curLinkedNode, preLinkedNode, target.getTitle())) {
-            current(curLinkedNode, preLinkedNode);
+        LinkedNode preLinkedNode = search(target.getTitle());
+        if (preLinkedNode != null) {
+            current(preLinkedNode.getNext(), preLinkedNode);
             return true;
         }
-
-        else return false;
+        else {
+            System.out.println("cannot find song!");
+            return false;
+        }
     }
 
 
     /* * changeTo: changes current song to the song entered by the user in O(n) time */
     public boolean changeTo(String s) {
         Song target = parseOneString(s);
-        LinkedNode linkedNode = head;
-        if( search(linkedNode, new LinkedNode(), target.getTitle()) ){
-            cur = linkedNode;
+        LinkedNode pre = search(target.getTitle());
+        if(pre != null){
+            cur = pre.getNext();
             return true;
         }
         return false;
@@ -193,9 +194,9 @@ public class SimplePlayList implements MusicPlayerImpl {
     /** addBefore: adds a song before another existing song in O(n) time*/
     public boolean addBefore(String string) {
         Song[] songs = parseTwoSongStrings(string);
-        LinkedNode curLinkedNode = head, preLinkedNode = head;
-        if (search(curLinkedNode, preLinkedNode, songs[0].getTitle())) {
-            preLinkedNode.setNext(new LinkedNode(songs[1], curLinkedNode));
+        LinkedNode preLinkedNode = search(songs[0].getTitle());
+        if (preLinkedNode != null) {
+            preLinkedNode.setNext(new LinkedNode(songs[1], preLinkedNode.getNext()));
             size++;
             return true;
         }
@@ -206,8 +207,9 @@ public class SimplePlayList implements MusicPlayerImpl {
     /* * addAfter: adds a song after another existing song in O(n) time*/
     public boolean addAfter(String string) {
         Song[] songs = parseTwoSongStrings(string);
-        LinkedNode curLinkedNode = head, preLinkedNode = head;
-        if (search(curLinkedNode, preLinkedNode, songs[0].getTitle())) {
+        LinkedNode preLinkedNode = search(songs[0].getTitle());
+        if (preLinkedNode != null) {
+            LinkedNode curLinkedNode = preLinkedNode.getNext();
             LinkedNode tmp = curLinkedNode.getNext();
             curLinkedNode.setNext(new LinkedNode(songs[1], tmp));
             size++;
@@ -234,6 +236,8 @@ public class SimplePlayList implements MusicPlayerImpl {
         int cnt = 0;
         while (linkedNode != null) {
             System.out.println(cnt + ". " + linkedNode.getSong().toString());
+            linkedNode = linkedNode.getNext();
+            cnt++;
         }
     }
 
@@ -290,8 +294,23 @@ public class SimplePlayList implements MusicPlayerImpl {
             System.out.println(s);
     }
 
-    protected boolean search(LinkedNode curLinkedNode, LinkedNode preLinkedNode, String target) {
-        
+    // return preNode
+    protected LinkedNode search(String target) {
+        LinkedNode preLinkedNode = null, curLinkedNode = head;
+        while (curLinkedNode != null && curLinkedNode.getSong().getTitle().compareTo(target) != 0) {
+            preLinkedNode = curLinkedNode;
+            curLinkedNode = curLinkedNode.getNext();
+        }
+        if (curLinkedNode != null) {   // hit
+            if (curLinkedNode == head) {
+                preLinkedNode = head;
+                while(preLinkedNode.getNext() != null) {
+                    preLinkedNode.set(preLinkedNode.getNext());  // perv is tail
+                }
+            }
+        }
+        else preLinkedNode = null;
+        return preLinkedNode;
     }
 
     protected void moveNext() {
