@@ -262,7 +262,6 @@ public class SimplePlayList implements MusicPlayerImpl {
     protected Song[] parseTwoSongStrings(String string) {
 
         StringBuffer sb = new StringBuffer();
-        String s1 = "", s2 = "";
         int i = 0;
         for (; i < string.length(); i++) {
             if(string.charAt(i) == ']')

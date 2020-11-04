@@ -1,0 +1,83 @@
+///////////////////////////////////////////////
+///	          1019		///
+//////////////////////////////////////////////
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public int[] nextLargerNodes(ListNode head) {
+        int n = 0;
+        ListNode p = head;
+        while(p != null)
+        {
+            n++;
+            p = p.next;
+        }
+        Stack<Integer> stack = new Stack();
+        int[] res = new int[n];
+        p = head;
+        int cnt = 0;
+
+        while(p != null) {
+            if(stack.isEmpty()) {
+                stack.push(p.val);
+                res[cnt] = 0;
+            }
+            else {
+                if (p.val < stack.peek()) {
+                    res[cnt] = 0;
+                    stack.push(p.val);
+                }
+                else {
+                    int i = cnt - 1;
+                    while(!stack.isEmpty() && stack.peek() < p.val) {
+                        if (res[i] == 0) {
+                            res[i] = p.val;
+                            stack.pop();
+                        }
+                        i--;
+                    }
+                    res[cnt] = 0;
+                    stack.push(p.val);
+                }
+            }
+            p = p.next;
+            cnt++;
+        }
+        return res;
+    }
+}
+
+
+///////////////////////////////////////////////
+///	          1035		///
+//////////////////////////////////////////////
+
+class Solution {
+   public int maxUncrossedLines(int[] A, int[] B) {
+        int m = A.length, n = B.length;
+        if (m < n) return maxUncrossedLines(B, A);
+
+        int dp[] = new int[n + 1];
+        for (int i = 1; i <= m; i++) {
+            int prev = 0;
+            for (int j = 1, cur; j <= n; j++) {
+                cur = dp[j];
+                if (A[i - 1] == B[j - 1]) 
+                    dp[j] = 1 + prev;
+                else 
+                    dp[j] = Math.max(dp[j], dp[j - 1]);
+                prev = cur;
+            }
+        }
+        return dp[n];
+    }
+}

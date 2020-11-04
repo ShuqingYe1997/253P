@@ -51,9 +51,4 @@ public class LinkedNode {
         this.next = node.getNext();
     }
 
-    public void set(Song song,LinkedNode node) {
-
-        this.song = song;
-        this.next = node;
-    }
 }
