@@ -1,0 +1,72 @@
+///////////////////////////////////////////////////////
+////////		Leetcode 310	    /////////
+///////////////////////////////////////////////////////
+
+class Solution {
+   
+    // find the middle node
+    public List<Integer> findMinHeightTrees(int n, int[][] edge) {
+        List<Integer> leaf = new ArrayList<>();
+        if(n == 1) {
+            leaf.add(0);
+            return leaf;
+        }
+        
+        List<List<Integer>> graph = new ArrayList<>();
+        int[] degree = new int[n];
+        for (int i = 0; i < n; i++)
+            graph.add(new ArrayList<>());
+        for (int i = 0; i < edge.length; i++) {
+            graph.get(edge[i][0]).add(edge[i][1]);
+            graph.get(edge[i][1]).add(edge[i][0]);
+            degree[edge[i][0]]++;
+            degree[edge[i][1]]++;
+        }
+        
+        
+        for (int i = 0; i <n; i++)
+            if(degree[i] == 1) // leaf node
+                leaf.add(i);
+       
+        // work like topo
+        // remove leaf nodes and the leftover is/are root
+        while(n > 2) {
+           n -= leaf.size();
+           List<Integer> tmp = new ArrayList<>();
+           for (int u: leaf){
+               for (int v: graph.get(u)) {
+                   degree[v]--;
+                   if(degree[v] == 1)
+                       tmp.add(v);
+               }
+           }
+        leaf = List.copyOf(tmp);
+       }
+        
+        return leaf;
+    }
+    
+}
+
+
+
+///////////////////////////////////////////////////////
+////////		Leetcode 814	    /////////
+///////////////////////////////////////////////////////
+class Solution {
+    
+   // bottom up
+    public TreeNode pruneTree(TreeNode root) {
+         if (root == null)
+            return root;
+        
+        root.left = pruneTree(root.left);
+        root.right = pruneTree(root.right);
+        if(root.val == 1)
+            return root;
+         if(root.left == null && root.right == null)  // leaf node 0
+            return null;
+        
+        return root;
+    }
+}
