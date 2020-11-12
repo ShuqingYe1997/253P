@@ -272,24 +272,27 @@ public class AVLTreeImpl {
             String line = "";
             AVLTree avlTree = new AVLTree();
             while ((line = bufferedReader.readLine()) != null) {
-                String[] commands= line.split("\\s+");
-                switch(commands[0]) {
-                    case "insert":
-                        avlTree.insert(Integer.parseInt(commands[1]));
-                        break;
-                    case "find":
-                        avlTree.find(Integer.parseInt(commands[1]));
-                        break;
-                    case "delete":
-                        avlTree.delete(Integer.parseInt(commands[1]));
-                        break;
-                    default:
-                        System.out.println("No such method! Please check your input.");
-                }
+                System.out.println(line);
             }
 
-            // Final output
-            avlTree.printAll();
+//                String[] commands= line.split("\\s+");
+//                switch(commands[0]) {
+//                    case "insert":
+//                        avlTree.insert(Integer.parseInt(commands[1]));
+//                        break;
+//                    case "find":
+//                        avlTree.find(Integer.parseInt(commands[1]));
+//                        break;
+//                    case "delete":
+//                        avlTree.delete(Integer.parseInt(commands[1]));
+//                        break;
+//                    default:
+//                        System.out.println("No such method! Please check your input.");
+//                }
+//            }
+//
+//            // Final output
+//            avlTree.printAll();
 
         }catch (IOException e) {
             e.printStackTrace();
