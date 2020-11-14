@@ -113,7 +113,6 @@ class HereditaryGraph {
         // List<Node> tmp = List.copyOf(nodes);
 
         List<Node> tmp = new ArrayList<>(nodes);
-
         while (tmp.size() > 0) {
             queue.add(tmp.get(tmp.size() - 1));
             while (!queue.isEmpty()) {

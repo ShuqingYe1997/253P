@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf3ee650-5291-424a-aa32-808ed6eef346" name="Default Changelist" comment="">
+    <list default="true" id="15dc643a-b75e-4b6c-9bde-217966b31782" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../HW6/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HW6/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HW6/.idea/modules.xml" afterDir="false" />
@@ -11,19 +11,19 @@
       <change afterPath="$PROJECT_DIR$/../HW6/sample_input.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HW6/src/KNearestNeighborClusters.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HW6/src/Quiz5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mst/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mst/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mst/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mst/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mst/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mst/src/Dijkstra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mst/src/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mst/src/Kruskal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW5/DimpleHereditary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW5/DimpleHereditary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW5/HereditaryGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW5/HereditaryGraph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AVLTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AVLTreeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DimpleHereditary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DimpleHereditary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dijkstra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Kruskal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HW5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HW5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HW5/out/production/HW5/DimpleHereditary.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HW5/out/production/HW5/DimpleHereditary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HW5/out/production/HW5/HereditaryGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HW5/out/production/HW5/HereditaryGraph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HW5/src/AVLTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HW5/src/AVLTreeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HW5/src/DimpleHereditary.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HW5/src/DimpleHereditary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../quizzes/quiz 3_code.pdf" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,26 +34,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AVLTreeImpl.java">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample_graph.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="341" column="17" selection-start-line="341" selection-start-column="17" selection-end-line="341" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1205#1206#0" expanded="true" />
-                <element signature="e#1272#1273#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="252">
+              <caret line="12" column="3" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample_input.txt">
+        <entry file="file://$PROJECT_DIR$/gragh.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Kruskal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="-1261">
+              <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -69,13 +69,14 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>delete</find>
-      <find>deleteMinNode</find>
-      <find>cal</find>
-      <find>toS</find>
-      <find>queue</find>
-      <find>list</find>
+      <find>graph.n</find>
+      <find>parent</find>
+      <find>print</find>
+      <find>7</find>
     </findStrings>
+    <replaceStrings>
+      <replace>n</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -83,26 +84,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Test.java" />
-        <option value="$PROJECT_DIR$/src/AVLTree.java" />
-        <option value="$PROJECT_DIR$/src/sample_input2.txt" />
-        <option value="$PROJECT_DIR$/src/sample_input3.txt" />
-        <option value="$PROJECT_DIR$/src/output.txt" />
-        <option value="$PROJECT_DIR$/src/sample_output.txt" />
-        <option value="$PROJECT_DIR$/sample_input.txt" />
-        <option value="$PROJECT_DIR$/src/DimpleHereditary.java" />
-        <option value="$PROJECT_DIR$/sample_graph.txt" />
-        <option value="$PROJECT_DIR$/src/Kruskal.java" />
         <option value="$PROJECT_DIR$/src/Dijkstra.java" />
-        <option value="$PROJECT_DIR$/src/AVLTreeImpl.java" />
+        <option value="$PROJECT_DIR$/src/Graph.java" />
+        <option value="$PROJECT_DIR$/src/Kruskal.java" />
       </list>
     </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-384" />
@@ -118,36 +104,36 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="HW5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW5" type="462c0819:PsiDirectoryNode" />
+              <item name="mst" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mst" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HW5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW5" type="462c0819:PsiDirectoryNode" />
+              <item name="mst" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mst" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HW5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW5" type="462c0819:PsiDirectoryNode" />
+              <item name="mst" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mst" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AVLTreeImpl.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+              <item name="Graph.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605366212019" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605366212044" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="D:/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -156,12 +142,8 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\UCI_MCS\253P\HW5\src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\UCI_MCS\253P\HW5\src" />
-      <recent name="D:\UCI_MCS\253P\HW5" />
+      <recent name="D:\UCI_MCS\253P\mst" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -176,31 +158,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Dijkstra">
+  <component name="RunManager" selected="Application.Kruskal">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AVLTreeImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AVLTreeImpl" />
-      <module name="HW5" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Dijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Dijkstra" />
+      <module name="Graph" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DimpleHereditary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DimpleHereditary" />
-      <module name="HW5" />
+    <configuration name="Kruskal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Kruskal" />
+      <module name="Graph" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -214,6 +189,53 @@
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="Graph" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="Graph" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -237,9 +259,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Kruskal" />
         <item itemvalue="Application.Dijkstra" />
-        <item itemvalue="Application.DimpleHereditary" />
-        <item itemvalue="Application.AVLTreeImpl" />
       </list>
     </recent_temporary>
   </component>
@@ -248,19 +269,26 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cf3ee650-5291-424a-aa32-808ed6eef346" name="Default Changelist" comment="" />
-      <created>1605102017717</created>
+      <changelist id="15dc643a-b75e-4b6c-9bde-217966b31782" name="Default Changelist" comment="" />
+      <created>1605353158277</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1605102017717</updated>
-      <workItem from="1605102023911" duration="4768000" />
-      <workItem from="1605159876317" duration="35528000" />
-      <workItem from="1605343566520" duration="5899000" />
+      <updated>1605353158277</updated>
+      <workItem from="1605353162194" duration="846000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46195000" />
+    <option name="totallyTimeSpent" value="12678000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -270,22 +298,22 @@
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.19504021" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.20844504" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="1" weight="0.18799546" />
+      <window_info anchor="bottom" id="Messages" order="1" weight="0.1260997" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Terminal" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.32844576" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.2829912" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.3295583" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.17888562" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.43841642" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.32991204" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Maven Projects" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -296,100 +324,48 @@
       <window_info anchor="right" id="Commander" order="7" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="10" weight="0.3297587" />
+      <window_info anchor="right" id="Maven" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/leetcode.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/Dijkstra.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/output.txt" />
-    <entry file="file://$PROJECT_DIR$/src/sample_input2.txt">
+    <entry file="file://$PROJECT_DIR$/sample_graph.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample_input3.txt">
+    <entry file="file://$PROJECT_DIR$/src/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample_output.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DimpleHereditary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="197" column="42" lean-forward="true" selection-start-line="197" selection-start-column="42" selection-end-line="197" selection-end-column="42" />
+        <state relative-caret-position="-623">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1186#1187#0" expanded="true" />
-            <element signature="e#1288#1289#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/gragh.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../mst/src/Dijkstra.java">
+    <entry file="file://$PROJECT_DIR$/src/Kruskal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../mst/src/Kruskal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../mst/sample_graph.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AVLTreeImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="341" column="17" selection-start-line="341" selection-start-column="17" selection-end-line="341" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
-            <element signature="e#1272#1273#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1261">
+          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
         </state>
       </provider>
     </entry>

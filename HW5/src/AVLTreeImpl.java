@@ -154,15 +154,15 @@ class AVLTree{
         if (balance > 1 && n < parent.left.val)
             return rotateRight(parent);
 
-        // Right Right
-        if (balance < -1 && n > parent.right.val)
-            return rotateLeft(parent);
-
         // Left Right
         if (balance > 1 && n > parent.left.val) {
             parent.left = rotateLeft(parent.left);  // Change LR to LL
             return rotateRight(parent);
         }
+
+        // Right Right
+        if (balance < -1 && n > parent.right.val)
+            return rotateLeft(parent);
 
         // Right Left
         if (balance < -1 && n < parent.right.val) {
@@ -209,25 +209,23 @@ class AVLTree{
 
         node.height = Math.max(height(node.left), height(node.right)) + 1;
 
-        int balance = getBalance(node);
-
         // Left Left
-        if (balance > 1 && getBalance(node.left) >= 0)
+        if (getBalance(node) > 1 && getBalance(node.left) >= 0)
             return rotateRight(node);
 
-        // Right Right
-        if (balance < -1 && getBalance(node.right) <= 0)
-            return rotateLeft(node);
-
         // Left Right
-        if (balance > 1 && getBalance(node.left) < 0)
+        if (getBalance(node) > 1 && getBalance(node.left) < 0)
         {
             node.left = rotateLeft(node.left);
             return rotateRight(node);
         }
 
+        // Right Right
+        if (getBalance(node) < -1 && getBalance(node.right) <= 0)
+            return rotateLeft(node);
+
         // Right Left
-        if (balance < -1 && getBalance(node.right) > 0)
+        if (getBalance(node) < -1 && getBalance(node.right) > 0)
         {
             node.right = rotateRight(node.right);
             return rotateLeft(node);
@@ -342,8 +340,6 @@ public class AVLTreeImpl {
                     default:
                         System.out.println("No such method! Please check your input.");
                 }
-
-
             }
             // Final output
             avlTree.printAll();
