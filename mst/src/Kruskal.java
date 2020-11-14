@@ -101,12 +101,11 @@ class KruskalImpl{
             subsets[jRoot].root = subsets[iRoot].root;
             subsets[iRoot].rank++;
         }
-
     }
 
     void printMST() {
         for (int i = 0; i < n; i++) {
-            System.out.println(i + ": " + graph.getPath(i, parent));
+            System.out.println(i + ": " + graph.getPath(i, parent) + ", subset: " + find(i));
         }
         System.out.println("The minimum cost to traverse the tree is " + sum + ".");
     }

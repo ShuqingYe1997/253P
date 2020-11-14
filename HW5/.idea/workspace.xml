@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf3ee650-5291-424a-aa32-808ed6eef346" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../HW6/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW6/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW6/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW6/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW6/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW6/HW6.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW6/sample_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW6/src/KNearestNeighborClusters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW6/src/Quiz5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mst/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mst/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mst/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mst/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mst/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mst/src/Dijkstra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mst/src/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mst/src/Kruskal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW5/DimpleHereditary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW5/DimpleHereditary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW5/HereditaryGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW5/HereditaryGraph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AVLTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AVLTreeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DimpleHereditary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DimpleHereditary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quizzes/quiz 3_code.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mst/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mst/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mst/src/Kruskal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mst/src/Kruskal.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,7 +17,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AVLTreeImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
+            <state relative-caret-position="293">
               <caret line="341" column="17" selection-start-line="341" selection-start-column="17" selection-end-line="341" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -147,7 +126,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605366212019" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605366795223" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="D:/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -255,12 +234,12 @@
       <updated>1605102017717</updated>
       <workItem from="1605102023911" duration="4768000" />
       <workItem from="1605159876317" duration="35528000" />
-      <workItem from="1605343566520" duration="5899000" />
+      <workItem from="1605343566520" duration="5992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46195000" />
+    <option name="totallyTimeSpent" value="46288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -279,7 +258,7 @@
       <window_info anchor="bottom" id="Terminal" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32844576" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.2829912" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.2829912" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -383,7 +362,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AVLTreeImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="293">
           <caret line="341" column="17" selection-start-line="341" selection-start-column="17" selection-end-line="341" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
