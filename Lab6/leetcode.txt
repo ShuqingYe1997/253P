@@ -1,0 +1,134 @@
+/**************************************
+ *  LeetCode 207. Course Schedule
+ * Solution1: detecting cycles with topoSort
+ * Runtime: 63%
+ ***************************************/
+class Solution {
+    public boolean canFinish(int n, int[][] prerequisites) {
+        return topo(buildGraph(n, prerequisites));
+    }
+    
+    List<List<Integer>> buildGraph(int n, int[][] edges) {
+       List<List<Integer>> graph = new ArrayList<>();
+       for (int i = 0; i < n; i++) {
+           graph.add(new ArrayList<>());
+       }
+        for(int[] pair: edges) {
+            graph.get(pair[1]).add(pair[0]);  // [1,0] === 0->1
+        }
+        return graph;
+    }
+    
+    boolean topo(List<List<Integer>> graph) {
+        int[] inDegree = new int[graph.size()];
+        Queue<Integer> queue = new ArrayDeque();
+        
+        for(List<Integer> list: graph) {
+            for (int i: list)
+                inDegree[i]++;
+        }
+        
+        for(int i = 0; i < inDegree.length; i++)
+            if (inDegree[i] == 0)
+                queue.offer(i);
+        
+        int cnt = 0;
+        while(!queue.isEmpty()) {
+            int i = queue.poll();
+            cnt++;
+            for(int u: graph.get(i)){
+                inDegree[u]--;
+                if (inDegree[u] == 0)
+                    queue.offer(u);
+            }
+        }
+        
+        return cnt == graph.size();
+    }
+}
+
+
+/**************************************
+ *  LeetCode 207. Course Schedule
+ * Solution2: detecting cycles with dfs
+ * Runtime: 99%
+ ***************************************/
+class Solution {
+    public boolean canFinish(int n, int[][] prerequisites) {
+        
+        List<List<Integer>> graph = buildGraph(n, prerequisites);
+        int[] inCycle = new int[n];
+        for(int i = 0; i < n; i++)
+            if(hasCycle(graph, i, inCycle))
+                return false;
+        return true;
+    }
+    
+    List<List<Integer>> buildGraph(int n, int[][] edges) {
+       List<List<Integer>> graph = new ArrayList<>();
+       for (int i = 0; i < n; i++) {
+           graph.add(new ArrayList<>());
+       }
+        for(int[] pair: edges) {
+            graph.get(pair[1]).add(pair[0]);  // [1,0] === 0->1
+        }
+        return graph;
+    }
+    
+    boolean hasCycle(List<List<Integer>> graph, int node, int[] inCycle){
+        if(inCycle[node] == 1)
+            return true;
+        if(inCycle[node] == -1)
+            return false;
+        
+        // if node is unvisited
+        inCycle[node] = 1;
+        for(int u: graph.get(node)) {
+            if(hasCycle(graph, u, inCycle))
+                return true;
+        }
+        inCycle[node] = -1;
+        return false;
+    }
+}
+
+
+/**************************************
+ *  LeetCode 200. Number of Islands
+ * Solution: dfs
+ * Runtime: 100%
+ ***************************************/
+class Solution {
+    int m = 0;
+    int n = 0;
+    public int numIslands(char[][] grid) {
+        m = grid.length;
+        n = grid[0].length;
+        
+        boolean[][] visited = new boolean[m][n];
+        int cnt = 0;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if(!visited[i][j] && grid[i][j] == '1'){
+                    cnt++;
+                    dfs(grid, i, j, visited);
+                }
+            }
+        }
+        return cnt;
+    }
+        
+    void dfs(char[][] grid, int i, int j, boolean[][] visited) {
+        if (i < 0 || i >= m || j < 0 || j >= n || visited[i][j])
+            return;
+       
+        visited[i][j] = true;
+        if (grid[i][j] == '1'){
+            dfs(grid, i - 1, j, visited);
+            dfs(grid, i + 1, j, visited);
+            dfs(grid, i, j + 1, visited);
+            dfs(grid, i, j - 1, visited);
+        }
+        
+    }
+}

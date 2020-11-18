@@ -134,7 +134,8 @@ public class Graph {
         for(int j = 0; j < vertices.size(); j++) {
             Vertex v = vertices.get(j);
             // If store dist as double, it would be a mess in lambda
-            int dist = (int)Math.sqrt((vertex.x - v.x) * (vertex.x - v.x) + (vertex.y - v.y) * (vertex.y - v.y));
+            // Solved! Dont do sqrt!
+            int dist = (vertex.x - v.x) * (vertex.x - v.x) + (vertex.y - v.y) * (vertex.y - v.y);
             edges.get(i).add(new Edge(i, j, dist));
             edges.get(j).add(new Edge(j, i, dist));
         }

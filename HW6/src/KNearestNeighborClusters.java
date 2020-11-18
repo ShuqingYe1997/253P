@@ -107,8 +107,6 @@ public class KNearestNeighborClusters {
             }
             System.out.println(graph.vertices.get(res.get(i - 1).get(j)).name);
         }
-
-
     }
 
 
