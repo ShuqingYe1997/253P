@@ -1,0 +1,119 @@
+//////////////////////////////////////////////
+// Leetcode 778. Swim in Rising Water  //
+/////////////////////////////////////////////
+class Solution {
+    int n = 0;
+    public int swimInWater(int[][] grid) {
+        n = grid.length;
+        
+        // binary search
+        int low = grid[0][0], high = n * n - 1;
+        while (low < high) {
+            int mid = (low + high) / 2;
+            if (dfs(grid, new boolean[n][n], 0, 0, mid))
+                high = mid;
+            else low = mid + 1;
+        }
+        return low;
+    }
+    
+    boolean dfs(int[][] grid, boolean[][] visited, int i, int j, int t) {
+        if (i < 0 || i >= n || j < 0 || j >= n || visited[i][j] || t < grid[i][j])
+            return false;
+        if (i == n - 1 && j == n - 1)
+            return true;
+        
+        visited[i][j] = true;
+        int[][] dirs = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+        for (int k = 0; k <dirs.length; k++)
+            if (dfs(grid, visited, i + dirs[k][0], j + dirs[k][1], t))
+                return true;
+        return false;
+    }
+}
+
+//////////////////////////////////////////////
+//  Leetcode 42. Trapping Rain Water   //
+/////////////////////////////////////////////
+class Solution {
+    int sum = 0;
+    public int trap(int[] height) {
+        findMaxHeight(height, 0, height.length - 1);
+        return sum;
+    }
+    
+    void findMaxHeight(int[] height, int left, int right) {
+        int max = Integer.MIN_VALUE;
+        int maxIndex = 0;
+        for (int i = left; i <= right; i++) {
+            if (height[i] > max) {
+                max = height[i];
+                maxIndex = i;
+            }
+        }
+        sumUpLeft(height, maxIndex);
+        sumUpRight(height, maxIndex);
+    }
+    
+    void sumUpLeft(int[] height, int maxIndex) {
+        if (maxIndex <= 0)
+            return;
+        int maxLeft = Integer.MIN_VALUE;
+        int maxLeftIndex = 0;
+        for (int i = maxIndex - 1; i >= 0; i--) {
+            if (height[i] > maxLeft) {
+                maxLeft = height[i];
+                maxLeftIndex = i;
+            }
+        }
+        for (int i = maxLeftIndex + 1; i < maxIndex; i++)
+            sum += maxLeft - height[i];
+        sumUpLeft(height, maxLeftIndex);
+    }
+    
+    void sumUpRight(int[] height, int maxIndex) {
+        if (maxIndex >= height.length - 1)
+            return;
+        int maxRight = Integer.MIN_VALUE;
+        int maxRightIndex = 0;
+        for (int i = maxIndex + 1; i < height.length; i++) {
+            if (height[i] > maxRight) {
+                maxRight = height[i];
+                maxRightIndex = i;
+            }
+        }
+        for (int i = maxIndex + 1; i < maxRightIndex; i++)
+            sum += maxRight - height[i];
+        sumUpRight(height, maxRightIndex);
+    }
+}
+
+//////////////////////////////////////////////
+//LeetCode 1224. Maximum Equal Frequency  //
+/////////////////////////////////////////////
+
+class Solution {
+    
+    final int N = 100005;
+    public int maxEqualFreq(int[] nums) {
+        
+        int[] cnt = new int[N];
+        int[] freq = new int[N];  // count the freq of each # of appearance
+        int maxFreq = 0;
+        int res = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            cnt[nums[i]] ++;
+            freq[cnt[nums[i]] - 1]--;
+            freq[cnt[nums[i]]] ++;
+            
+            maxFreq = Math.max(maxFreq, cnt[nums[i]]);
+            
+            if (maxFreq * freq[maxFreq] + 1 == i + 1  // all maxF, current 1
+               || (maxFreq - 1) * freq[maxFreq - 1] + maxFreq == i + 1  // all maxF - 1, current maxF
+               || maxFreq == 1)
+                res =  i + 1;
+        }
+        return res;
+    }
+}
