@@ -21,9 +21,6 @@ Example:
 		CDLXXVI  
 		476  
 
-## Exit
-Input `exit`  
-
 ##Error detection
 1. Invalid number  
 2. Invalid roman numeral  

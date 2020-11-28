@@ -85,7 +85,7 @@ class RomanNumeralConverterImpl {
                 sum += ROMAN_VALUE_MAP.get(s.charAt(i));
             else {  // e.g. IX: minus this value then add next value, move 2 steps at a time
                 sum -= ROMAN_VALUE_MAP.get(s.charAt(i));
-                sum += ROMAN_VALUE_MAP.get(s.charAt(++i));
+//                sum += ROMAN_VALUE_MAP.get(s.charAt(++i));
             }
         }
         // the last char

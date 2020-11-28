@@ -1,0 +1,38 @@
+// leetcode 17. Letter Combinations of a Phone Number
+
+class Solution {
+    
+    public List<String> letterCombinations(String digits) {
+        String[][] keyboard = {
+            {"a", "b", "c"},
+            {"d", "e", "f"},
+            {"g", "h", "i"},
+            {"j", "k", "l"},
+            {"m", "n", "o"},
+            {"p", "q", "r", "s"},
+            {"t", "u", "v"},
+            {"w", "x", "y", "z"}
+        };
+        List<String> res = new ArrayList<>();
+        
+        if(digits.length() == 0)
+            return res;
+        
+        backtrace(digits, 0, keyboard, new StringBuilder(), res);
+        return res;  
+    }
+    
+    void backtrace(String digits, int i, String[][] keyboard, 
+                   StringBuilder tmp, List<String> res) {
+        if (i == digits.length()) {
+            res.add(tmp.toString());
+            return;
+        }
+        int index = digits.charAt(i) - '2';
+        for (int j = 0; j < keyboard[index].length; j++) {
+            tmp.append(keyboard[index][j]);
+            backtrace(digits, i + 1, keyboard, tmp, res);
+            tmp.setLength(tmp.length() - 1);  // remove the last element
+        }
+    }
+}
