@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13aeb1da-bb9c-4670-9972-d2f6e7cb5d56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DNASequenceAlignment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DNASequenceAlignmentWithInvalidPairs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample_input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HW7/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW7/out/production/HW7/RomanNumeralConverterImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HW7/out/production/HW7/RomanNumeralConverterImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW7/report/report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../HW7/report/report.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW7/report/~$report.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW7/report/~WRL0947.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW7/src/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../HW7/src/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW7/src/RomanNumeralConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HW7/src/RomanNumeralConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.docx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DNASequenceAlignment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="139" column="7" selection-start-line="139" selection-start-column="7" selection-end-line="139" selection-end-column="7" />
+            <state relative-caret-position="128">
+              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DNASequenceAlignmentWithInvalidPairs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1554">
-              <caret line="116" column="15" selection-start-line="116" selection-end-line="117" />
+            <state relative-caret-position="149">
+              <caret line="130" column="49" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,7 +104,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606594833157" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606596023771" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="D:/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -203,16 +193,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606404107974</updated>
-      <workItem from="1606404112588" duration="15759000" />
+      <workItem from="1606404112588" duration="16546000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15759000" />
+    <option name="totallyTimeSpent" value="16546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Capture Tool" order="0" />
       <window_info id="Designer" order="1" />
@@ -229,7 +218,7 @@
       <window_info anchor="bottom" id="Terminal" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3295583" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.24193548" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.24193548" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -251,16 +240,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/DNASequenceAlignmentWithInvalidPairs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1554">
-          <caret line="116" column="15" selection-start-line="116" selection-end-line="117" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample_input.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -270,8 +249,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DNASequenceAlignment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="139" column="7" selection-start-line="139" selection-start-column="7" selection-end-line="139" selection-end-column="7" />
+        <state relative-caret-position="128">
+          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DNASequenceAlignmentWithInvalidPairs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="130" column="49" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

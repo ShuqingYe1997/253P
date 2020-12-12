@@ -1,0 +1,99 @@
+/////   55. jump game         //////
+class Solution {
+    public boolean canJump(int[] nums) {
+        int max = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (i > max)
+                return false;
+            max = Math.max(max, i + nums[i]);
+            if (max >= nums.length - 1)
+                return true;
+        }
+        return true;
+    }
+}
+
+/////   881. Boats to Save People       //////
+class Solution {
+    public int numRescueBoats(int[] people, int limit) {
+        Arrays.sort(people);
+        int res = 0;
+        for (int right = people.length - 1, left = 0; right >= left;) {
+            int sum = 0;
+            // Each boat carries at most 2 people at the same time
+            if (people[right] <= limit)
+                sum += people[right--];
+            if (sum + people[left] <= limit)
+                sum += people[left++];
+            res++;
+        }
+        return res;
+    }
+}
+
+/////   354. Russian Doll Envelopes       //////
+class Solution {
+    public int maxEnvelopes(int[][] env) {
+        
+        // 就比LIS多一个排序
+        Arrays.sort(env, new Comparator<int[]>() {
+            public int compare(int[] o1, int[] o2) {
+                //we need to put [3, 4] before [3, 3] when sorting 
+                //otherwise it will be counted as an increasing number if the order is [3, 3], [3, 4]
+
+                if (o1[0] == o2[0])
+                    return o2[1] - o1[1];
+                else
+                    return o1[0] - o2[0];
+            }
+        });
+        int[] dp = new int[env.length];
+        int cnt = 0;
+        for(int[] pair: env) {
+            // width is sorted, we now only consider height
+            if (cnt == 0 || dp[cnt - 1] < pair[1])
+                dp[cnt++] = pair[1];
+            else {
+                int i = Arrays.binarySearch(dp, 0, cnt, pair[1]);
+                if(i < 0)
+                    i = -(i + 1);
+                dp[i] = pair[1];
+            }
+        }
+        return cnt;
+    }
+}
+
+
+/////   403. Frog Jump       //////
+class Solution {
+    public boolean canCross(int[] stones) {
+        int n = stones.length;
+        Map<Integer, HashSet<Integer>> map = new HashMap<Integer, HashSet<Integer>>();
+        
+        for(int stone: stones)
+            map.put(stone, new HashSet<Integer>());
+        map.get(0).add(1);
+        
+        for (int i = 0; i < n - 1; i++) {
+            int stone = stones[i];
+           for (int j : map.get(stone)) {
+        		int next = j + stone;
+                if (next == stones[n - 1])
+                    return true;
+                
+                HashSet<Integer> set = map.get(next);
+                if (set != null) {
+                    if (j - 1 > 0)  // 为什么加上这句话就好了。。
+                        set.add(j - 1);
+                    set.add(j);
+                    set.add(j + 1);
+                }
+            }
+        }
+        return false;
+    }
+}
+
+
+

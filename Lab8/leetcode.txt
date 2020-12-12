@@ -1,0 +1,28 @@
+//////  1049. Last Stone Weight II   ///////
+class Solution {
+    
+    // 0-1 knapsack
+    // Divide into two sets, positive and negative
+    // target = 2 * Sum(pos) - Sum(stones)
+    public int lastStoneWeightII(int[] stones) {
+        int sum = 0;
+        for (int stone: stones)
+            sum += stone;
+        
+        boolean[] dp = new boolean[sum + 1];
+        dp[0] = true;
+        int tmp = 0;
+        for (int stone: stones) {
+            tmp += stone;
+            for (int i = tmp; i >= 0; i--) {
+                if (i - stone >= 0)
+                    dp[i] |= dp[i - stone];
+            }    
+        }
+        
+        for(int i = sum / 2; i >= 0; i--)
+            if (dp[i]) 
+                return sum - i * 2;
+        return 0;
+    }
+}
